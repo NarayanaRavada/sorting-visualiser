@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Algo Visualiser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="visualiser.js" defer></script>
+  </head>
+  <body>
+    <div class="title">
+      <h1>SORTING VISUALISER</h1>
+    </div>
+    <div id="navbar">
+      <ul>
+        <button onclick="handleClick('bubbleSort')">BUBBLE SORT</button>
+        <button onclick="handleClick('selectionSort')">SELECTION SORT</button>
+        <button onclick="handleClick('insertionSort')">INSERTION SORT</button>
+        <button onclick="handleClick('mergeSort')">MERGE SORT</button>
+        <button onclick="handleClick('quickSort')">QUICK SORT</button>
+        <button onclick="handleClick('countingSort')">COUNTING SORT</button>
+        <button onclick="testQuickSort()">test quickSort</button>
+      </ul>
+    </div>
+    <div class="controls">
+      <!--<div class="stats-cont">-->
+      <!--<div class="stats">-->
+      <!--<h2>swaps :<span id="swap-count">0</span></h2>-->
+      <!--<h2>array visits :<span id="array-visits">0</span></h2>-->
+      <!--<div id="curr-stats"></div>-->
+      <!--</div>-->
+      <!--<h2 class="range-label time">-->
+      <!--time taken : <span id="time-count">0</span>-->
+      <!--</h2>-->
+      <!--</div>-->
+      <ul>
+        <li>
+          <div class="range">
+            <h2 class="range-label">Size: <span id="size"></span></h2>
+            <input
+              id="size-slider"
+              class="range-slider"
+              type="range"
+              min="30"
+              max="1000"
+              step="1"
+              value="150"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="range">
+            <h2 class="range-label">Delay: <span id="interval"></span></h2>
+            <input
+              id="interval-slider"
+              class="range-slider"
+              type="range"
+              min="1"
+              max="500"
+              step="1"
+              value="5"
+            />
+          </div>
+        </li>
+        <div id="refresh">
+          <img class="refresh" src="./refresh.png" />
+        </div>
+      </ul>
+    </div>
+    <div id="bars"></div>
+  </body>
+</html>

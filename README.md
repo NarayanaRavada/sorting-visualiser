@@ -1,7 +1,16 @@
-# sorting-visualiser
+# Sorting Algorithm Visualiser
 This project implements visualisation for sorting algorithms
 
-## Algorithms Included
+### A glimpse at the work 
+![Main Page](./glimpses/glimpse.png)
+
+### merge sort in action
+![Main Page](./screenshots/merge_sort.png)
+
+### quick sort in action
+![Main Page](./screenshots/quick_sort.png)
+
+## Algorithms Implemented
 ### Bubble sort
   ```js
   const bubbleSort = (arr) => {
